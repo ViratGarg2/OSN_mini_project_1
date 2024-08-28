@@ -1,0 +1,22 @@
+echo "joker"
+echo "joker"
+echo "joker"
+echo "joker"
+echo "joker"
+echo "joker"
+echo "joker"
+echo "joker"
+echo "joker"
+echo "joker"
+hop new;
+hop new;hop go;
+hop new;
+hop go;reveal -la;
+ls;hop /home
+reveal -la
+reveal -l
+echo "hi"&echo "joker"&kalu;lol;go to hell
+echo "1" & echo "2" & echo "3";echo "4";echo "5";
+reveal -la&hop new&hop go;reveal -l /home
+reveal -la;log
+reveal -l;log
