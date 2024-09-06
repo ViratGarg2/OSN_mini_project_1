@@ -1,0 +1,28 @@
+"hello world"
+echo "hello" > new.txt | wc & sleep 3
+
+echo hi | wc
+reveal -l
+echo hi >> new.txt
+echo hi >> new.txt & sleep 2
+echo hi >> new.txt & sleep 3
+edcho "yellow" > new.txt & sleep 3
+echo "yellow" > new.txt & sleep 3
+hop prompts
+echo hio | wc & sleep 3
+echo hio | wc & sleep 3
+echo "hi" | wc & sleep 3
+echo hi | wc & sleep 3
+echo hi | wc & sleep 3
+echo hi | wc & sleep 3
+echo hi | wc & sleep 3
+echo hi | wc & sleep 3
+echo hi | wc & sleep 3
+echo hi | wc & sleep 3
+cat new.txt | wc |
+cat new.txt | wc |
+cat new.txt
+echo hi | wc & sleep 2
+echo hi | wc & sleep 3
+echo hi | wc & sleep 3
+echo hi | wc & sleep 3
