@@ -1,0 +1,27 @@
+37059 sleep 10
+37324 sleep 20
+37537 sleep 20
+38476 wget https://example.com/largefile.zip
+39174 yes > /dev/null
+39659 yes > /dev/null
+39967 yes > /dev/null
+40161 find / -name "somefile.txt"
+40356 seek newfi.txt /home
+40697 seek newfi.txt /home
+43259 sleep 30
+43628 sleep 60
+44024 sleep 20
+44453 sleep 10
+44609 sleep 20
+44908 sleep 10
+45454 emacs new.txt
+57279 echo hello | wc
+69669 sleep 2
+69671 sleep 3
+76787 reveal -l | wc
+76788 sleep 20
+77049 reveal | wc
+77125 cat new.txt | wc
+77844 reveal | wc
+77908 reveal -l | wc
+77909 sleep 20
