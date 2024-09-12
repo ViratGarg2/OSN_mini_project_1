@@ -14,15 +14,20 @@
 #include <sys/wait.h>
 #include "color.h"
 #include<ctype.h>
+#include "signals.h"
+#include "background.h"
 char PREV_DIR[4096];
+int foreground_id = -1;
 int cnt = 0;
 int sleepflg = 0;
 int sleepval = 0;
 char* slow_commands[100];
 char time_command[4096];
 char time_command[4096] = "";
+char foreground_name2[4096];
 char *filepath = "/home/viratgarg/Documents/Sem3/OSN/projects/project_1B/newfile.txt";
 char *pids = "/home/viratgarg/Documents/Sem3/OSN/projects/project_1B/pids.txt";
+int time2 = 0;
 int main()
 {
     int k = getpid();
@@ -38,9 +43,8 @@ int main()
     char buffer3[1000];
     int flg = 0;
     char buffer2[1024];
-
-
-
+    signal(SIGINT, handle_sigint);
+    signal(SIGTSTP,ctrl_z);
 
     while (1)
     {
@@ -55,10 +59,18 @@ int main()
         {
             if (fgets(buffer2, sizeof(buffer2), stdin) == NULL)
             {
-                perror("fgets() error");
-                continue;
+             //   perror("fgets() error");
+               
+                ctrl_d();
+                printf("interrupted\n");
+                // exit(0);
             }
         }
+        // if(fgets(buffer2, sizeof(buffer2), stdin) == NULL)
+        // {
+        //     perror("fgets() error");
+        //     return 0;
+        // }
        // check_background_processes();
         trim(buffer2);
         int file;

@@ -133,7 +133,7 @@ void execute_pipe(char *command, char *p, char *c, char *g, int k, int flg, char
         // printf("arguments are %s",args[0]);
         //  fflush(stdout);
         if (pid == 0)
-        {
+        {   
             //  printf("input is %s",args[0]);
             // In the child process
             //  printf("args[0] is %s",command3);
@@ -198,9 +198,15 @@ void execute_pipe(char *command, char *p, char *c, char *g, int k, int flg, char
             fflush(stdout);
         }
         else
-        {
+        {   
+            FILE *pid_file = fopen(pids, "a");
+                    if (pid_file != NULL) {
+                        fprintf(pid_file, "%d %s\n", pid,command_final); // Write the PID to the file
+                        fclose(pid_file);             // Close the file
+                    } else {
+                        perror("Unable to open file to store PID");
+            }
             // In the parent process
-
             // Close the input file descriptor from the previous command
             if (input_fd != 0)
             {

@@ -1,5 +1,6 @@
 #include "input.h"
 
+
 void handle_sigchld(int sig)
 {
     int status;
@@ -7,17 +8,21 @@ void handle_sigchld(int sig)
 
     // Reap all child processes that have terminated
     while ((pid = waitpid(-1, &status, WNOHANG)) > 0)
-    {
+    {   
+        check_status();
         if (WIFEXITED(status))
-        {
+        {   
+          //  modify_status(pid,0);
             printf("Process %d exited with status %d\n", pid, WEXITSTATUS(status));
         }
         else if (WIFSIGNALED(status))
-        {
+        {   
+          //  modify_status(pid,0);
             printf("Process %d was terminated by signal %d\n", pid, WTERMSIG(status));
         }
         else
-        {
+        {   
+          //  modify_status(pid,1);
             printf("Process %d did not exit normally\n", pid);
         }
     }
@@ -113,6 +118,7 @@ void input(int file, char *p, char *c, char *g, int k, int flg, char *save, char
 {
 
         trim(command2);
+       // foreground_id = getpid();
        // printf("command2 finally is %s\n",command2);
         if (command2 == NULL)
         {
@@ -202,6 +208,7 @@ void input(int file, char *p, char *c, char *g, int k, int flg, char *save, char
             int dcnt = 0;
             int fcnt = 0;
             int ecnt = 0;
+         //   foreground_id = getpid();
             while (next != NULL && next[0] == '-')
             {
                 if (next[1] == 'd')
@@ -266,10 +273,21 @@ void input(int file, char *p, char *c, char *g, int k, int flg, char *save, char
         {
             exit(0);
         }
-        else if(strncmp(command2,"activities",10) == 0){
+        else if(strncmp(command2,"fg",2) == 0){
+            command2 = strtok(command2," ");
+            command2 = strtok(NULL," ");
+            int pid3 = atoi(command2);
+            bring_to_foreground(pid3);
+        }
 
-            check_status();
-            // printf("Executing activities");
+        else if(strncmp(command2,"bg",2) == 0){
+            command2 = strtok(command2," ");
+            command2 = strtok(NULL," ");
+            int pid3 = atoi(command2);
+            bring_to_background(pid3);
+        }
+        else if(strncmp(command2,"activities",10) == 0){
+           print_status2();
         }
         else if(strncmp(command2,"iMan",4) == 0){
             char * man_command = strtok(command2," ");
@@ -285,15 +303,21 @@ void input(int file, char *p, char *c, char *g, int k, int flg, char *save, char
             int signal = atoi(ping_command);
             send_signal_to_pid(pid,signal);
         }
+        else if(strncmp(command2,"neonate",7) == 0){
+            char *neonate_command = strtok(command2," ");
+            neonate_command = strtok(NULL," ");
+            neonate_command = strtok(NULL," ");
+            int interval = atoi(neonate_command);
+            printf("%d\n",interval);
+            print_recent_process_interval(interval);
+        }
         else
         {   
             trim(command2);
-           // printf("command inputed is %s",command2);
             struct sigaction sa;
             sa.sa_handler = &handle_sigchld;
             sa.sa_flags = SA_RESTART | SA_NOCLDSTOP;
             sigaction(SIGCHLD, &sa, 0);
-        //     char final[4096] = " ";
             trim(command2);
             pid_t pid = fork();
             char command3[4096] = " ";
@@ -315,17 +339,42 @@ void input(int file, char *p, char *c, char *g, int k, int flg, char *save, char
             }
             else if (pid > 0)
             {   
+
+                foreground_id = pid;
+                strcpy(foreground_name2,command3);
+               // printf("%s\n",command2);
+                char buffer[256];
                 struct timespec start, end;
                 clock_gettime(CLOCK_MONOTONIC, &start);
                 int status;
-                waitpid(pid, &status, 0);
+                while (1)
+                {
+                    pid_t result = waitpid(pid, &status, WNOHANG | WUNTRACED);
+                    if (result == -1)
+                    {
+                        break;
+                    }
+
+                    if (result == 0)
+                    {
+                        sleep(0.1);
+                    }
+                    else if (WIFSTOPPED(status))
+                    {
+                        break;
+                    }
+                    else if (WIFEXITED(status) || WIFSIGNALED(status))
+                    {
+                        break;
+                    }
+                }
                 clock_gettime(CLOCK_MONOTONIC, &end);
                 double elapsed_time = (end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / 1e9;
-                int time2=elapsed_time;
+                int time3=elapsed_time;
                // printf("Command '%s' took %d seconds\n",command3, time2);
                   if (elapsed_time > 2.0) {
                     char str[4096];
-                    sprintf(str,"%d",time2);
+                    sprintf(str,"%d",time3);
                     char* tok=strtok(command3," ");
                   //  printf("tok is %s\n",tok);
                    // tok = strtok(NULL," ");
@@ -335,10 +384,9 @@ void input(int file, char *p, char *c, char *g, int k, int flg, char *save, char
                     strcat(time_command,"s");
                 }else{
                     strcpy(time_command,"");
-                   // printf("command is %s",time_command);
                 }
-                // printf("%s",time_command);
-
+                
+               // time2 = 1;
             }
             else
             {
@@ -352,6 +400,7 @@ void input2(char *buffer2, char *buffer3, int file, char *p, char *c, char *g, i
     char *save;
   //  printf("buffer2 is %s\n",buffer2);
     char *command2 = strtok_r(buffer2, ";", &save);
+
    // trim(command2);
   //  printf("after trimming %s",command2);
     while (command2 != NULL) {
@@ -418,19 +467,15 @@ void input2(char *buffer2, char *buffer3, int file, char *p, char *c, char *g, i
                         input(0, p, c, g, 0, 0, save, command3);
                     }else{
                     char *args[] = {"/bin/sh", "-c", command3, NULL};
+                    printf("%d\n",getpid());
+                    fflush(stdout);
                     execvp(args[0], args);
                     }
                 }
                     exit(1);
                 } else if (pid > 0) {
                     printf("Started background process with PID: %d\n", pid);
-                    FILE *pid_file = fopen(pids, "a");
-                    if (pid_file != NULL) {
-                        fprintf(pid_file, "%d %s\n", pid,command3); // Write the PID to the file
-                        fclose(pid_file);             // Close the file
-                    } else {
-                        perror("Unable to open file to store PID");
-                    }
+                    push_process(pid,command3);
                 } else {
                     perror("fork");
                 }

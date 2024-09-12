@@ -19,6 +19,7 @@
 #include <dirent.h>
 #include <signal.h>
 #include <time.h>
+#include <pwd.h>
 #include<limits.h>
 #include <sys/time.h>
 #include "alias.h"
@@ -27,7 +28,8 @@
 #include "man.h"
 #include "background.h"
 #include "ping.h"
-
+#include "signals.h"
+#include "neonate.h"
 void read_file(char* path);
 extern int sleepflg;
 extern int sleepval;
@@ -36,6 +38,9 @@ extern char* slow_commands[100];
 extern char time_command[4096];
 extern char* filepath;
 extern char* pids;
+extern int time2;
+extern int foreground_id;
+extern char foreground_name2[4096];
 void trim(char* str);
 char* trim_spaces(char* str);
 void input2(char* buffer2,char * buffer3,int file,char*p,char* c,char *g,int k,int flg);

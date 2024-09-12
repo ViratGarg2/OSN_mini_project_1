@@ -14,7 +14,7 @@ void strip_html_tags(char *str) {
     char *src = str;
     char *dst = str;
     int inside_tag = 0;
-
+    
     while (*src) {
         if (*src == '<') {
             inside_tag = 1;

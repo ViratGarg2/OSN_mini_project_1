@@ -142,3 +142,803 @@ activities
 ps 77909
 ps 77909
 proclore 77909
+gedit &
+activities
+proclore 80709
+cat new.txt | wc
+activities
+cat > new.txt | wc
+cat < new.txt | wc
+activities
+sleep 2 & sleep 3 &
+
+echo "lorem ipsum" | wc
+activities
+echo "lorem" | wc
+echo "lorem" | wc
+activities
+echo "lorem" | wc
+activities
+echo "kl" | wc
+activities
+proclore 83582
+ps 83582
+echo ji > new.txt & sleep 10
+vim
+reveall
+spdjcn
+sleep 20 &
+sleep 20 &
+sleep 20 &
+sleep 20 &
+sleep 20 & sleep 30 &
+sleep 20 &
+sleep 20 &
+sleep 10 &
+sleep 20 &
+sleep 20 &
+sleep 20
+sleep 20
+sleep 5 &
+reveal -l
+sleep 10 &
+sleep 10 &
+sleep 20
+sleep 20
+sleep 20
+sleep 20
+sleep 10 &
+sleep 20 &
+sleep 10 &
+sleep 20
+sleep 20
+sleep 20 &
+reveal -l
+reveall
+sleep 10
+sleep 10
+reveall
+activities
+gedit
+activities
+vim &
+sleep 20 &
+sleep 20 &
+activities
+sleep 20 &
+ping 124693 11
+
+activities
+sleep 20 &
+activities
+ping 125076 11
+proclore 1250776
+proclore 125076
+activities
+sleep 20 &
+activties
+ping 126426 11
+
+sleep 10
+sleep 10
+emacs new.txt
+emacs new.txt &
+vim &
+emacs new.txt &
+activities
+ping 128919 9
+
+activities
+ping 128919 11
+gedit
+gedit &
+activities
+ping 129509 11
+activities
+gedit &
+sleep 3 &
+
+gedit &
+ldkn
+gedit &
+gedit &
+reveal -l
+hop prompts
+home
+reveal -l | wc
+reveal -l | wc
+reveal -l| wc
+reveal | wc
+sleep 10 &
+sleep 10
+sleep 10 &
+sleep 10 & sleep 20
+sleep 20
+vim &
+gedit &
+gedit &
+gedit &
+activities
+activities
+ping 135145 9
+
+reveal -l
+reveall
+echo "lol" > new.txt & cat new.txt
+
+echo "lol" > new.txt & cat new.txt
+echo "lorem" > new.txt & cat new.txt
+echo "lorem ipsum" & sleep 3
+reveal -l & sleep 3
+activities
+sleep 30 &
+activities
+fg 179568
+sleep 30 &
+activities
+fg 179968
+sleep 10
+emacs new.txt
+emacs new.txt &
+fg 180835
+sleep 20 &
+fg 181944
+sleep 10 &
+fg 182297
+sleep 10 &
+fg 182971
+sleep 10 &
+fg 183674
+sleep 10 &
+fg 184193
+sleep 10 &
+fg 184528
+sleep 10 &
+fg 185379
+sleep 20 &
+fg 185676
+sleep 20 &
+fg 185951
+sleep 10 &
+fg 186232
+fg 890
+fg 891
+fg 191045
+fg 191045
+fg 191045
+fg 192540
+sleep 10 &
+fg 192823
+sleep 20 &
+fg 193083
+sleep 20 &
+activities
+fg 193848
+reveal -l
+reveall
+sleep 20&
+fg 194707
+sleep 20 &
+bg 194990
+activities
+vim &
+vim &
+sleep 10 &
+emacs
+emacs &
+vim
+emacs
+sleep 3
+activities
+sleep 3
+activities
+sleep 3 &
+activities
+sleep 3
+activities
+sleep 2 & sleep 2
+
+reveal & sleep 2 &
+
+clear
+clear
+sleep 10 &
+activities
+
+activities
+sleep 10 &
+activities
+
+sleep 10 &
+activities
+
+sleep 10 &
+activities
+sleep 10 &
+activities
+vim &
+sleep 10 &
+activities
+sleep 10 &
+activities
+
+sleep 10 &
+activities
+sleep 10 &
+sleep 10 &
+sleep 10 &
+activities
+sleep 10 &
+activities
+
+activities
+sleep 4 &
+
+activities
+sleep 20 &
+ping 21808 9
+ping 218018 9
+
+activities
+sleep 20 &
+ping 218347 9
+
+activities
+sleep 20 &
+ping 218628 9
+
+activities
+sleep 20 &
+ping 218957 9
+
+activities
+sleep 10 &
+activities
+sleep 20 &
+ping 219810 9
+
+activities
+sleep 20 &
+activities
+ping 220971 9
+
+activities
+sleep 20 &
+activities
+ping 221976 9
+sleep 20 &
+ping 222204 9
+sleep 20 &
+ping 222519 9
+
+[activities
+activities
+activities
+sleep 5 &
+sleep 10 &
+ping 222841 9
+
+activities
+sleep 20 &
+activities
+ping 223514 9
+
+activities
+gcc *.c
+sleep 20 &
+ping 22425 9\
+ping 224254
+sleep 20 &
+ping 224493 9
+
+activitie
+activities
+sleep 20 &
+ping 225061 9
+
+activities
+sleep 20 &
+activities
+sleep 20 &
+activities
+ping 227220 9
+
+activities
+sleep 20 &
+ping 227642 9
+
+activities
+sleep 20 &
+ping 227900 9
+
+activities
+sleep 20 &
+ping 228166 9
+
+activities
+sleep 20 &
+ping 228587 9
+
+activities
+sleep 20 &
+ping 228977 9
+
+activities
+sleep 15 &
+ping 229254 9
+
+activities
+sleep 20 &
+activities
+ping 229941 9
+
+activities
+sleep 20 &
+ping 230399 9
+
+activities
+[A[A
+sleep 20 &
+ping 230644 9
+
+activities
+sleep 20 &
+ping 2306934 9
+ping 230934 9
+
+activities
+sleep 10 &
+ping 231276 9
+
+activities
+sleep 20 &
+ping 237477 9
+
+activities
+sleep 20 &
+activities
+ping 237903 9
+
+sleep 25 &
+ping 238031 9
+
+sleep 20 &
+ping 238365 9
+
+activities
+sleep 20 &
+ping 238765 11
+
+activities
+reveal -l &
+sleep 10 &
+ping 238964 9
+
+activities
+sleep 20 &
+activities
+ping 240349 19
+activities
+sleep 20 &
+activities
+ping 241001 9
+
+sleep 40 &
+ping 241156 9
+
+activities
+sleep 30 &
+ping 241251 11
+activities
+sleep 20 &
+fg 241959
+reveal -la
+clear
+gcc *.c
+sleep 20 &
+ping 20 13
+sleep 50 &
+ping 243499 11
+sleep 50 &
+ping 243842 12
+
+activities
+sleep 40 &
+ping 244504 18
+ping 244504 19
+sleep 60 &
+activities
+ping 244804 19
+activities
+ping 244804 9
+
+activities
+vim &
+gedit &
+sleep 10 &
+activities
+
+activities
+activities
+activities
+sleep 10 &
+activities
+vim &
+gedit &
+gedit &
+sleep 10 &
+activities
+
+activities
+sleep 10
+sleep 10 &
+bg 256249
+
+sleep 20 &
+fg 256531
+sleep 10 &
+fg 257870
+sleep 10 &
+fg 258013
+sleep 10 &
+fg 258227
+sleep 10 &
+fg 258413
+sleep 10 &
+
+fg 258560
+activities
+fg 258560
+activities
+fg 285413
+fg 258413
+sleep 4
+sleep 3 &
+
+activities
+fg 259621
+sleep 3 &
+
+activities
+sleep 10 &
+activities
+
+activities
+gedit &
+activities
+sleep 10 &
+ping 260861 19
+activities
+activities
+sleep 10 &
+activities
+
+activities
+sleep 10 &
+ping 262292 19
+activities
+activities
+sleep 3 &
+sleep 20 &
+ping 262897 19
+activities
+sleep 20 &
+ping 263151 19
+activities
+sleep 20 &
+ping 263488 19
+activities
+sleep 2 &
+
+activities
+fg 263488
+sleep 2 &
+
+fg 263904
+sleep 20 &
+fg 264057
+activities
+sleep 10 &
+activities
+ping 264300 19
+sleep 20 &
+ping 264416 19
+activities
+fg 264416
+activities
+sleep 50 &
+ping 264724 19
+activities
+sleep 50 &
+ping 265016 19
+activities
+fg 265016
+activities
+sleep 50 &
+ping 265359 19
+bg 265359
+actiivties
+activities
+sleep 50 &
+ping 265711 19\
+activities
+bg 265711
+activities
+
+activities
+sleep 10 &
+ping 26634018
+sleep 10 &
+ping 266584 18
+gedit &
+ping 266735 19
+ping 266735 18
+ps 266735
+ping 266735 9
+ps 266735
+gedit &
+ping 267476 9
+ping 267468 9
+gedit &
+gedit &
+gedit &
+ping 268203 9
+gedit &
+ping 268131 9
+sleep 100 &
+ping 268704 18
+activities
+ping 268704 19
+activities
+ping 268704 9
+activities
+sleep 10
+sleep 10 &
+
+activities
+sleep 20
+activities
+sleep 10 &
+
+
+activities
+sleep 10
+activities
+sleep 10
+activities
+sleep 10
+sleep 10
+sleep 10
+sleep 10
+sleep 10
+sleep 10
+sleep 10
+sleep 10
+sleep 10
+sleep 10
+sleep 3
+
+
+
+
+
+
+
+sleep 10
+sleep 6
+sleep 4
+sleep 10
+sleep 5
+cd prompts
+cd the
+hop the
+home
+sleep 5
+sleep
+sleep 4
+sleep 5
+sleep 2
+
+
+
+
+
+sodnf
+pandf
+ansc
+sleep 10
+sleep 10
+
+
+
+
+
+
+
+
+
+sleep 10
+
+
+
+
+sleep 10
+
+
+sleep 10
+
+
+
+sleep 10
+
+
+
+
+sleep 10
+
+
+echo "kl"|wc
+echo hi|wc
+echo "kl"|wc
+sleep 3
+
+
+echo "lorem ipsum" | wc
+echo "kl"|wc
+sleep 3
+sleep 8 &
+sleep 50
+sleep 10
+sleep 10
+
+sleep 10
+sleep 10
+sleep 5
+sleep 10
+activities
+sleep 20
+
+sleep 30
+sleep 10
+sleep 10
+sleep 10
+sleep 20
+sleep 10
+sleep 10
+sleep 50
+sleep 30
+sleep 10
+
+sleep 10
+sleep 10
+sleep 10
+sleep 10
+sleep 10
+sleep 5
+sleep 5
+sleep 10
+sleep 10
+sleep 3
+bg 299146
+sleep 6
+sleep 5
+activities
+sleep 5
+activities
+fg 300364
+sleep 50
+activities
+bg 300543
+
+sleep 10
+activities
+fg 300976
+sleep 20
+activities
+fg 301424
+sleep 10
+activities
+fg 301672
+bg 301672
+activities
+sleep 10 &
+activit
+sleep 20 &
+ping 302202 19
+activities
+bg 302202
+
+sleep 10 &
+fg 302685
+sleep 20 &
+fg 302864
+
+sleep 20
+sleep 20 &
+ping 303165 19
+activities
+fg 303165
+
+sleep 20 &
+fg 303702
+sleep 20 &
+bg 303948
+activities
+
+sleep 20
+activities
+fg 303948
+bg 303948
+activities
+activities
+sleep 50
+activities
+ps 5927
+
+activities
+ping 5927 18
+
+activities
+sleep 20 &
+
+sleep 20 &
+sleep 50 &
+sleep 40 &
+ping 18577 19
+ping 18557 19
+activities
+ps 18557
+ping 18557 18
+sleep 10
+sleep 30 &
+sleep 30 &
+activities
+p
+sleep 10 &
+sleep 30
+sleep 20 &
+activities
+sleep 20 &
+sleep 30
+sleep 20
+sleep 10
+sleep 10
+activities
+activities
+fg 21565
+activities
+neonate -n 4
+neonata -n 2
+neonate -n 2
+neonate -n 2
+neonate -n 2
+neonate -n 2
+neonate -n 2
+neonate -n 3
+neonate -n 2
+neonate -n 2
+neonate -n 2
+x
+neonate -n 1
+neonate -n 1
+neonate -n 2
+sleep 10
+fseek new.txt /home
+seek new.txt /home
+seek new.txt /home
+seek new.txt \home
+seek new.txt \home
+seek newfile.txt /home
+sleep 10
+seek newfile.txt /home
+
+sleep 10
+activities
+sleep 10
+activities
+bg 34463
+
+echo "hello"|hop
+sleep 10
+neonate -n 2
+neonate -n 1
