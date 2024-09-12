@@ -4,5 +4,5 @@
 #include <unistd.h>
 #include <string.h>
 #include <signal.h>
+#include "background.h"
 
-void send_signal_to_pid(int pid, int signal);
